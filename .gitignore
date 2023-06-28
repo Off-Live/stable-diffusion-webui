@@ -29,7 +29,8 @@ notification.mp3
 /SwinIR
 /textual_inversion
 .vscode
-/extensions
+/extensions/sd-webui-agent-scheduler
+/extensions/stable-diffusion-webui-images-browser
 /test/stdout.txt
 /test/stderr.txt
 /cache.json*
