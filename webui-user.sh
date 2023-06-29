@@ -10,7 +10,7 @@
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-#export COMMANDLINE_ARGS=""
+export COMMANDLINE_ARGS="--api --gradio-auth admin:123456,roux:123456,dan:123456,kenny:123456,gw:123456,donald:123456,brian:123456 --administrator"
 
 # python3 executable
 #python_cmd="python3"

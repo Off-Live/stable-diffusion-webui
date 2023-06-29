@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+
+  sdw:
+    image: off/sd-webui-docker:0.1
+    command: /app/stable-diffusion-webui/webui.sh --api --gradio-auth admin:123456,roux:123456,dan:123456,kenny:123456,gw:123456,donald:123456,brian:123456 --administrator
+    volumes:
+      - ./extensions:/app/stable-diffusion-webui/extensions
+      - ./models:/app/stable-diffusion-webui/models
+      - ./outputs:/app/stable-diffusion-webui/outputs
+    ports:
+      - 7860:7860
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
